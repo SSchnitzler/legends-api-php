@@ -1,0 +1,10 @@
+{
+    "name": "sschnitzler/legends-api-php",
+    "authors": [
+        {
+            "name": "Stefan Schnitzler",
+            "email": "stefan.schnitzler@contorion.de"
+        }
+    ],
+    "require": {}
+}
