@@ -19,4 +19,19 @@ class SummonerApi
     {
         return $this->apiClient->fetchDataFromApi(self::API_VER . '/summoner/by-name/' . $summonerName);
     }
+
+    public function getSummonerById($summonerId)
+    {
+        return $this->apiClient->fetchDataFromApi(self::API_VER . '/summoner/' . $summonerId);
+    }
+
+    public function getMultipleSommonersById(array $summonerIds)
+    {
+        return $this->apiClient->fetchDataFromApi(self::API_VER . '/summoner/' . implode(',', $summonerIds));
+    }
+
+    public function getMultipleSommonersByName(array $summonerNames)
+    {
+        return $this->apiClient->fetchDataFromApi(self::API_VER . '/summoner/by-name/' . implode(',', $summonerNames));
+    }
 }
